@@ -1,0 +1,5 @@
+# Preface {.unnumbered}
+
+This book is intended to provide standard guidance for getting started with R. 
+
+

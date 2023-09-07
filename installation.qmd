@@ -1,0 +1,28 @@
+---
+title: "Installation"
+---
+
+Use the following links to install R and RStudio by following the links below. I highly recommend that you also install Git (link below) and create an account on GitHub (link below). The Git related tools are very useful but 
+
+```{r, echo=FALSE}
+
+urls <- c("https://cran.r-project.org/bin/windows/base/",
+
+"https://www.rstudio.com/products/rstudio/download/#download",
+
+"https://git-scm.com/downloads",
+
+"https://github.com")
+
+link.df <- data.frame(
+
+Software = c("R", "RStudio", "Git", "GitHub"),
+
+Link = paste0("[", urls, "](", urls, ")")
+
+)
+
+knitr::kable(link.df)
+
+```
+

@@ -1,0 +1,25 @@
+project:
+  type: book
+
+book:
+  title: "Getting Started with R"
+  author: "Zachary M. Smith"
+  date: "today"
+  chapters:
+    - index.qmd
+    - r_intro.qmd
+    - quick_references.qmd
+    - installation.qmd
+    - updating_software.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

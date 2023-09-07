@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Getting Started with R",
+    "section": "",
+    "text": "Preface\nThis book is intended to provide standard guidance for getting started with R."
+  },
+  {
+    "objectID": "r_intro.html#what-is-r",
+    "href": "r_intro.html#what-is-r",
+    "title": "1  R Intro",
+    "section": "1.1 What is R?",
+    "text": "1.1 What is R?\nR is an open source programming language developed for statistical computing and graphic production. “R can be considered as a different implementation of S”, a language that was developed at Bell Laboratories (https://www.r-project.org/about.html).\n\n1.1.1 Benefits of Using R\n\nReproducibility: Standardized processes (e.g., functions, loops, documentation)\n\n\nWhen using MS Excel processes are often spread across multiple sheets or calculations are performed haphazardly within a single sheet. In general, this makes it very hard to interpret processes performed and to reproduce the process.\n\n\nPower: Ability to perform simple and complex data manipulations, iterative processes, and calculations\n\n\nAccess to more than 10,000 packages on CRAN\nNew packages are constantly being developed\nNew features are constantly being added to existing packages\n\n\n\n1.1.2 R Packages\nR packages are extensions of base R that provide additional features or provide alternative functionality.\n\nAvailability\nCRAN (https://cran.r-project.org/)\nThe Comprehensive R Archive Network (CRAN)\nFTP and web servers that store R Packages\nPackages are required to meet certain standards\nGitHub (https://github.com)\nThese packages are usually under development\nContains development versions of many packages available on CRAN\nCustom (http://r-pkgs.had.co.nz/)\nYou have the ability to create your own packages."
+  },
+  {
+    "objectID": "r_intro.html#what-is-rstudio",
+    "href": "r_intro.html#what-is-rstudio",
+    "title": "1  R Intro",
+    "section": "1.2 What is RStudio?",
+    "text": "1.2 What is RStudio?\n\n\n\n\n\n\nNote\n\n\n\nRStudio != R\n\n\nRStudio is not R. RStudio is an Integrated Development Environment (IDE) that makes it easier to develop with R. The desktop version of RStudio is maintained by the company Posit and is free to download.\nAnother popular IDE is Visual Studio Code or VS Code now owned by Microsoft."
+  },
+  {
+    "objectID": "quick_references.html",
+    "href": "quick_references.html",
+    "title": "2  Quick Reference",
+    "section": "",
+    "text": "Below are a collection of R related resources. If you have recommendation you would like to see added to the list, please open a pull request or issue via GitHub.\n\nCheat Sheets\nR Bloggers\nQuestions\n\nStackOverflow\nPosit Community\n\nStyle Guides\n\nTidyverse Style Guide\nGoogle’s Style Guide\n\nBooks and Papers\n\nR for Data Science (2e)\nThe Art of R Programming\nAdvanced R\nR Packages\nTidy Data\n\nPackages\n\nShiny (Interactive Apps)\n\nTutorials\n\nLeaflet (Interactive Maps)\nDT (Interactive Tables)\nDygraphs (Interactive Time Series Plots)\nPlotly (Interactive Plots)\nTidyverse Packages (Ecosystem of Packages)\nRmarkdown (Documentation)\nUSGS GitHub\n\ndataRetrieval (Acquire data from the Water Quality Portal)\nEGRET (Analysis of long-term changes in water quality and streamflow)"
+  },
+  {
+    "objectID": "installation.html",
+    "href": "installation.html",
+    "title": "3  Installation",
+    "section": "",
+    "text": "Use the following links to install R and RStudio by following the links below. I highly recommend that you also install Git (link below) and create an account on GitHub (link below). The Git related tools are very useful but\n\n\n\n\n\nSoftware\nLink\n\n\n\n\nR\nhttps://cran.r-project.org/bin/windows/base/\n\n\nRStudio\nhttps://www.rstudio.com/products/rstudio/download/#download\n\n\nGit\nhttps://git-scm.com/downloads\n\n\nGitHub\nhttps://github.com"
+  },
+  {
+    "objectID": "updating_software.html#updating-software-and-packages",
+    "href": "updating_software.html#updating-software-and-packages",
+    "title": "4  Untitled",
+    "section": "4.1 Updating Software and Packages",
+    "text": "4.1 Updating Software and Packages\n\n4.1.1 R\nRun the following code in the RGui, NOT in RStudio. The RGui should be installed when you install R. On my Windows machine, I access R by clicking on the R program file, “R x64 3.5.1”.\n\n\n\nYou should get a window like this if you have opened the correct program.\n\n\n\nThis code was copied from: https://www.r-statistics.com/2013/03/updating-r-from-r-on-windows-using-the-installr-package/). Make sure R Studio is closed before running this code within the RGui.\n\n# installing/loading the package:\n\nif(!require(installr)) {\n\ninstall.packages(\"installr\");\n\nrequire(installr)\n\n} #load / install+load installr\n\n# using the package:\n\nupdateR()\n\n\n\n4.1.2 RStudio\n\nOpen RStudio\nClick on “Help” on the toolbar\nClick on “Check for Updates”\nFollow instructions\n\n\n\n\n\n\n4.1.3 R-Packages\n\nOpen RStudio\nClick on “Tools” on the toolbar\nClick on “Check for Package Updates…”\nFollow instructions\n\n\n\n\n\n4.1.3.1 Packages for Workshop\nPlease run the following code within RStudio to make sure you have all of necessary packages for this workshop installed.\n\nOpen RStudio\nCopy the following code\n\n\npackage.vec <- c(\"tidyverse\", \"lubridate\",\n\n\"knitr\", \"rmarkdown\", \"markdown\", \"caTools\", \"bitops\",\n\n\"DT\", \"leaflet\", \"shiny\", \"jsonlite\",\n\n\"data.table\", \"rprojroot\", \"viridis\")\n\ninstall.packages(package.vec)\n\n\nPaste the code into the Console within RStudio\n\n\n\n\n\nHit Enter\n\n\nIf prompted with “Do you want to restart R prior to installing?”, select “Yes”\nIf prompted again then select “No”\n\n\nThe packages should begin to install. This may take some time."
+  },
+  {
+    "objectID": "updating_software.html",
+    "href": "updating_software.html",
+    "title": "4  Updating Software and Packages",
+    "section": "",
+    "text": "4.0.1 R\nRun the following code in the RGui, NOT in RStudio. The RGui should be installed when you install R. On my Windows machine, I access R by clicking on the R program file, “R x64 3.5.1”.\n\n\n\nYou should get a window like this if you have opened the correct program.\n\n\n\nThis code was copied from: https://www.r-statistics.com/2013/03/updating-r-from-r-on-windows-using-the-installr-package/). Make sure R Studio is closed before running this code within the RGui.\n\n# installing/loading the package:\n\nif(!require(installr)) {\n\ninstall.packages(\"installr\");\n\nrequire(installr)\n\n} #load / install+load installr\n\n# using the package:\n\nupdateR()\n\n\n\n4.0.2 RStudio\n\nOpen RStudio\nClick on “Help” on the toolbar\nClick on “Check for Updates”\nFollow instructions\n\n\n\n\n\n\n4.0.3 R-Packages\n\nOpen RStudio\nClick on “Tools” on the toolbar\nClick on “Check for Package Updates…”\nFollow instructions\n\n\n\n\n\n4.0.3.1 Packages for Workshop\nPlease run the following code within RStudio to make sure you have all of necessary packages for this workshop installed.\n\nOpen RStudio\nCopy the following code\n\n\npackage.vec <- c(\"tidyverse\", \"lubridate\",\n\n\"knitr\", \"rmarkdown\", \"markdown\", \"caTools\", \"bitops\",\n\n\"DT\", \"leaflet\", \"shiny\", \"jsonlite\",\n\n\"data.table\", \"rprojroot\", \"viridis\")\n\ninstall.packages(package.vec)\n\n\nPaste the code into the Console within RStudio\n\n\n\n\n\nHit Enter\n\n\nIf prompted with “Do you want to restart R prior to installing?”, select “Yes”\nIf prompted again then select “No”\n\n\nThe packages should begin to install. This may take some time."
+  }
+]

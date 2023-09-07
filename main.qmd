@@ -1,0 +1,10 @@
+---
+title: "R Setup"
+format: html
+editor: visual
+project:
+  type: website
+  output-dir: docs
+---
+
+

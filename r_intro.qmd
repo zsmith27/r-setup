@@ -1,0 +1,57 @@
+---
+title: "R Intro"
+---
+
+## What is R?
+
+R is an open source programming language developed for statistical computing and graphic production. "R can be considered as a different implementation of S", a language that was developed at Bell Laboratories (https://www.r-project.org/about.html).
+
+### Benefits of Using R
+
+1.  **Reproducibility:** Standardized processes (e.g., functions, loops, documentation)
+
+-   When using MS Excel processes are often spread across multiple sheets or calculations are performed haphazardly within a single sheet. In general, this makes it very hard to interpret processes performed and to reproduce the process.
+
+2.  **Power:** Ability to perform simple and complex data manipulations, iterative processes, and calculations
+
+-   Access to more than 10,000 packages on CRAN
+
+-   New packages are constantly being developed
+
+-   New features are constantly being added to existing packages
+
+### R Packages
+
+R packages are extensions of base R that provide additional features or provide alternative functionality.
+
+-   Availability
+
+-   CRAN (https://cran.r-project.org/)
+
+-   The Comprehensive R Archive Network (CRAN)
+
+-   FTP and web servers that store R Packages
+
+-   Packages are required to meet certain standards
+
+-   GitHub (https://github.com)
+
+-   These packages are usually under development
+
+-   Contains development versions of many packages available on CRAN
+
+-   Custom (http://r-pkgs.had.co.nz/)
+
+-   You have the ability to create your own packages.
+
+![](images/introduction/packages.png){width="700px"}
+
+## What is RStudio?
+
+::: callout-note
+`RStudio != R`
+:::
+
+RStudio is not R. RStudio is an Integrated Development Environment (IDE) that makes it easier to develop with R. The desktop version of RStudio is maintained by the company Posit and is free to download.
+
+Another popular IDE is [Visual Studio Code or VS Code](https://www.bing.com/search?q=vscode&cvid=5af1606bae8d427391a6c59b8be84329&aqs=edge.0.0l9j69i11004.3351j0j9&FORM=ANAB01&PC=U531) now owned by Microsoft.
